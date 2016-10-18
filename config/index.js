@@ -63,9 +63,7 @@ var config = {
   // default system admins
   admins: {
     // name: email
-    fengmk2: 'fengmk2@gmail.com',
-    admin: 'admin@cnpmjs.org',
-    dead_horse: 'dead_horse@qq.com',
+    shaohuimeng: 'shaohuimeng@qiyi.com'
   },
 
   // email notification for errors
@@ -85,13 +83,13 @@ var config = {
   adBanner: '',
   customReadmeFile: '', // you can use your custom readme file instead the cnpm one
   customFooter: '', // you can add copyright and site total script html here
-  npmClientName: 'cnpm', // use `${name} install package`
+  npmClientName: 'inpm', // use `${name} install package`
   packagePageContributorSearch: true, // package page contributor link to search, default is true
 
   // max handle number of package.json `dependencies` property
   maxDependencies: 200,
   // backup filepath prefix
-  backupFilePrefix: '/cnpm/backup/',
+  backupFilePrefix: '/inpm/backup/',
 
   /**
    * database config
@@ -135,7 +133,7 @@ var config = {
   downloadRedirectToNFS: false,
 
   // registry url name
-  registryHost: 'r.cnpmjs.org',
+  registryHost: 'localhost',
 
   /**
    * registry mode config
