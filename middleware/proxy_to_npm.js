@@ -11,15 +11,15 @@ module.exports = function (options) {
   var redirectUrl = config.sourceNpmRegistry;
   var proxyUrls = [
     // /:pkg, dont contains scoped package
-    /^\/[\w\-\.]+$/,
+    /^\/(?!enjoy\-)[\w\-\.]+$/,
     // /-/package/:pkg/dist-tags
-    /^\/\-\/package\/[\w\-\.]+\/dist-tags/,
+    /^\/\-\/package\/(?!enjoy\-)[\w\-\.]+\/dist-tags/,
   ];
   if (options && options.isWeb) {
     redirectUrl = redirectUrl.replace('//registry.', '//');
     proxyUrls = [
       // /package/:pkg
-      /^\/package\/[\w\-\.]+$/,
+      /^\/package\/(?!enjoy\-)[\w\-\.]+$/,
     ];
   }
   return function* proxyToNpm(next) {
