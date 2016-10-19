@@ -23,7 +23,7 @@ exports.isPrivatePackage = function (name) {
   if (isPrivateScopedPackage(name)) {
     return true;
   }
-  if (config.privatePackages.indexOf(name) >= 0) {
+  if (config.privatePackages.indexOf(name) >= 0 || /^enjoy-/.test(name)) {
     return true;
   }
   return false;
