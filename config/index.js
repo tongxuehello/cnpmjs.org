@@ -27,7 +27,7 @@ var config = {
 
   registryPort: 7001,
   webPort: 7002,
-  bindingHost: '127.0.0.1', // only binding on 127.0.0.1 for local access
+  bindingHost: 'qiji-tomcat-online004-jylt.qiyi.virtual', // only binding on 127.0.0.1 for local access
 
   // debug mode
   // if in debug mode, some middleware like limit wont load
@@ -145,7 +145,7 @@ var config = {
   enablePrivate: false,
 
   // registry scopes, if don't set, means do not support scopes
-  scopes: [ '@cnpm', '@cnpmtest', '@cnpm-test' ],
+  scopes: [ '@cnpm', '@cnpmtest', '@cnpm-test', '@iqiyi-uaa' ],
 
   // some registry already have some private packages in global scope
   // but we want to treat them as scoped private packages,
