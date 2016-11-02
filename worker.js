@@ -6,8 +6,8 @@ var web = require('./servers/web');
 var logger = require('./common/logger');
 var config = require('./config');
 
-registry.listen(config.registryPort, config.bindingHost);
-web.listen(config.webPort, config.bindingHost);
+registry.listen(config.registryPort);
+web.listen(config.webPort);
 
 console.log('[%s] [worker:%d] Server started, registry server listen at %s:%d, web listen at %s:%d, cluster: %s',
   new Date(), process.pid,
