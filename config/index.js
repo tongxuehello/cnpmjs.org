@@ -27,7 +27,7 @@ var config = {
 
   registryPort: 7001,
   webPort: 7002,
-  bindingHost: 'qiji-tomcat-online004-jylt.qiyi.virtual', // only binding on 127.0.0.1 for local access
+  bindingHost: '10.153.107.2', // only binding on 127.0.0.1 for local access
 
   // debug mode
   // if in debug mode, some middleware like limit wont load
